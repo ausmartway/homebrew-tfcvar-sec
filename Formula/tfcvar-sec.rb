@@ -5,28 +5,28 @@
 class TfcvarSec < Formula
   desc "The tfcvar-sec is a tool that scanns Terraform Cloud for insecure terraform/enviroment variables."
   homepage "https://github.com/ausmartway/tfcvar-sec"
-  version "0.2.11"
+  version "0.2.12"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.11/tfcvar-sec_0.2.11_darwin_arm64.tar.gz"
-      sha256 "91c76cb5e47e472d5d7ef04fbf35cbf9ecd684ac8032475f4d43c22f56c8f805"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.12/tfcvar-sec_0.2.12_darwin_arm64.tar.gz"
+      sha256 "3792b88ef3c2a71f4b99537c55cd88ffe39b986e2b9a2cb9977e5cbc12d1e488"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.11/tfcvar-sec_0.2.11_darwin_amd64.tar.gz"
-      sha256 "84f2eb3912756f634db7119b1da141146161b90fd4d44e2a16005523132c966b"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.12/tfcvar-sec_0.2.12_darwin_amd64.tar.gz"
+      sha256 "77a2fcb509669ef3623343126d51dc6bd43b8565294edb034ba4f6233f8efcb2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.11/tfcvar-sec_0.2.11_linux_arm64.tar.gz"
-      sha256 "f4c1a8642306a863f34d3d442f52cf7570abf8368070a4a73cf26de6599daa18"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.12/tfcvar-sec_0.2.12_linux_arm64.tar.gz"
+      sha256 "a48757419f388be668a33752ba3365409058c132ad5934048c115e63a963491f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.11/tfcvar-sec_0.2.11_linux_amd64.tar.gz"
-      sha256 "6a160bb3dbcbadbe7601e669eceb3c2e077b6ed37f3b9ab9454924117b231ffd"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.12/tfcvar-sec_0.2.12_linux_amd64.tar.gz"
+      sha256 "cb8b3a88d7dac82ea996552fe6a7eb463749107ee88de00748927637868f1802"
     end
   end
 
