@@ -5,28 +5,28 @@
 class TfcvarSec < Formula
   desc "The tfcvar-sec is a tool that scanns Terraform Cloud for insecure terraform/enviroment variables."
   homepage "https://github.com/ausmartway/tfcvar-sec"
-  version "0.2.7"
+  version "0.2.8"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_darwin_arm64.tar.gz"
-      sha256 "3b14dfe2e25e1594374030dcf87c095f10ae5e35963f8e0c37c5d51994ac5b27"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.8/tfcvar-sec_0.2.8_darwin_arm64.tar.gz"
+      sha256 "e923a40de07765a5f62c565282b279b9bdb0aaadac2d799a4fe33a801959f97d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_darwin_amd64.tar.gz"
-      sha256 "595861420806bb29e78869bd6e54fcd446a037efbea5718aa25cf1ad1c5944f8"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.8/tfcvar-sec_0.2.8_darwin_amd64.tar.gz"
+      sha256 "7648f43c70323e37fab49bc556d13e50b5c3d7476d4e7d4449f021fb7eef6551"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_linux_arm64.tar.gz"
-      sha256 "5e502009a02249f7085b551ec7d02babe8d80cd5148cfaaddbca43d9866d1ee8"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.8/tfcvar-sec_0.2.8_linux_arm64.tar.gz"
+      sha256 "6b02a0ae46b9dd808e0593a1c5045c5f9fe01d7f2a83ad1c265259b5317e1a7c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_linux_amd64.tar.gz"
-      sha256 "1493e943cd0bacf10e243ef51a3f8a88918ee5c7926d0e7007185ff4db09db51"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.8/tfcvar-sec_0.2.8_linux_amd64.tar.gz"
+      sha256 "16c9ba3d73e5892b2d715500304258037201f915c248f0a77ec50219c7cd9e3b"
     end
   end
 
