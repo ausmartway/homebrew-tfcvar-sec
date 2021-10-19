@@ -5,20 +5,28 @@
 class TfcvarSec < Formula
   desc "The tfcvar-sec is a tool that scanns Terraform Cloud for insecure terraform/enviroment variables."
   homepage "https://github.com/ausmartway/tfcvar-sec"
-  version "0.2.6"
+  version "0.2.7"
   bottle :unneeded
 
   on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_darwin_arm64.tar.gz"
+      sha256 "600f2aae51b931cace368d8f65d72c9c26c5e7907dddd3bfac8c1140177c1211"
+    end
     if Hardware::CPU.intel?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.6/tfcvar-sec_0.2.6_darwin_x86_64.tar.gz"
-      sha256 "4b845729bb9c40fb599c3e87e1e4d41c081c0b7377cea436e7210601e9642226"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_darwin_x86_64.tar.gz"
+      sha256 "0d06f074913b043521bfe91f4d3991fbcb38e7fe77836a2ce3ae40eabde61606"
     end
   end
 
   on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_linux_arm64.tar.gz"
+      sha256 "559f70f234c42738c04e9eddbad7e013e772573f1a506ff2ac82c3787b5afe61"
+    end
     if Hardware::CPU.intel?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.6/tfcvar-sec_0.2.6_linux_x86_64.tar.gz"
-      sha256 "962a706ce90401306f4273ea951a4379692490c172683f85ce87e3c090b84817"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_linux_x86_64.tar.gz"
+      sha256 "76a01589d19eecf5b82bb366c914f5468069a22336a77eb4c69e50bfd6a836f1"
     end
   end
 
