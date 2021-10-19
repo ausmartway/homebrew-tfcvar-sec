@@ -11,22 +11,22 @@ class TfcvarSec < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_darwin_arm64.tar.gz"
-      sha256 "600f2aae51b931cace368d8f65d72c9c26c5e7907dddd3bfac8c1140177c1211"
+      sha256 "3b14dfe2e25e1594374030dcf87c095f10ae5e35963f8e0c37c5d51994ac5b27"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_darwin_x86_64.tar.gz"
-      sha256 "0d06f074913b043521bfe91f4d3991fbcb38e7fe77836a2ce3ae40eabde61606"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_darwin_amd64.tar.gz"
+      sha256 "595861420806bb29e78869bd6e54fcd446a037efbea5718aa25cf1ad1c5944f8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_linux_arm64.tar.gz"
-      sha256 "559f70f234c42738c04e9eddbad7e013e772573f1a506ff2ac82c3787b5afe61"
+      sha256 "5e502009a02249f7085b551ec7d02babe8d80cd5148cfaaddbca43d9866d1ee8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_linux_x86_64.tar.gz"
-      sha256 "76a01589d19eecf5b82bb366c914f5468069a22336a77eb4c69e50bfd6a836f1"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.7/tfcvar-sec_0.2.7_linux_amd64.tar.gz"
+      sha256 "1493e943cd0bacf10e243ef51a3f8a88918ee5c7926d0e7007185ff4db09db51"
     end
   end
 
