@@ -5,28 +5,28 @@
 class TfcvarSec < Formula
   desc "The tfcvar-sec is a tool that scanns Terraform Cloud for insecure terraform/enviroment variables."
   homepage "https://github.com/ausmartway/tfcvar-sec"
-  version "0.2.8"
+  version "0.2.10"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.8/tfcvar-sec_0.2.8_darwin_arm64.tar.gz"
-      sha256 "e923a40de07765a5f62c565282b279b9bdb0aaadac2d799a4fe33a801959f97d"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.10/tfcvar-sec_0.2.10_darwin_arm64.tar.gz"
+      sha256 "114dd20458e134381f13d0a2dccb58969f64ba25515b13f0f9cc94b33f0107e5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.8/tfcvar-sec_0.2.8_darwin_amd64.tar.gz"
-      sha256 "7648f43c70323e37fab49bc556d13e50b5c3d7476d4e7d4449f021fb7eef6551"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.10/tfcvar-sec_0.2.10_darwin_amd64.tar.gz"
+      sha256 "52348af9be6923316946d2a1576a383812cd95481dc84fd1772cafa1b6e924a0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.8/tfcvar-sec_0.2.8_linux_arm64.tar.gz"
-      sha256 "6b02a0ae46b9dd808e0593a1c5045c5f9fe01d7f2a83ad1c265259b5317e1a7c"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.10/tfcvar-sec_0.2.10_linux_arm64.tar.gz"
+      sha256 "691ccc8c75fb8a2570d94b6bbed03a5db1fdda0e76a7941dd5cb11f443777dac"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.8/tfcvar-sec_0.2.8_linux_amd64.tar.gz"
-      sha256 "16c9ba3d73e5892b2d715500304258037201f915c248f0a77ec50219c7cd9e3b"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.10/tfcvar-sec_0.2.10_linux_amd64.tar.gz"
+      sha256 "02e42c7aea9dc8e1e1176c5d35bca33c20827a77685d6946a98de70cceb5df6e"
     end
   end
 
