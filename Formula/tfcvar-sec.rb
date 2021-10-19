@@ -11,14 +11,14 @@ class TfcvarSec < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.6/tfcvar-sec_0.2.6_darwin_x86_64.tar.gz"
-      sha256 "96690051f89cfd6b935bc57e8f6d8a028eac71f5cfa7be0ba377e84af365b370"
+      sha256 "4b845729bb9c40fb599c3e87e1e4d41c081c0b7377cea436e7210601e9642226"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.2.6/tfcvar-sec_0.2.6_linux_x86_64.tar.gz"
-      sha256 "20956dd4010ce66ca4cbdb6232fbf2c8a952cf7d91d2a399e5cb910638f81348"
+      sha256 "962a706ce90401306f4273ea951a4379692490c172683f85ce87e3c090b84817"
     end
   end
 
