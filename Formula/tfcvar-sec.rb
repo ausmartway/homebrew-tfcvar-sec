@@ -5,27 +5,27 @@
 class TfcvarSec < Formula
   desc "The tfcvar-sec is a tool that scanns Terraform Cloud for insecure terraform/enviroment variables."
   homepage "https://github.com/ausmartway/tfcvar-sec"
-  version "0.3.3"
+  version "0.3.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.3.3/tfcvar-sec_0.3.3_darwin_arm64.tar.gz"
-      sha256 "434641b8a1f17dd396f78eef54e28b9d933766e9a36a0479f7e88529db2ed106"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.3.4/tfcvar-sec_0.3.4_darwin_arm64.tar.gz"
+      sha256 "ec74f4b38baa8cf9bbecdf852a7ae49c80d2b700adca14b18a8f2174102c69c1"
 
       def install
         bin.install "tfcvar-sec"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.3.3/tfcvar-sec_0.3.3_darwin_amd64.tar.gz"
-      sha256 "7d81c9d63d598ae1779686e607cf47772cdd4f3ba539a54b3b5ec87c877e644b"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.3.4/tfcvar-sec_0.3.4_darwin_amd64.tar.gz"
+      sha256 "b6f7268ac5a7eb0a4920861b56939430e48d37cbebbe95334488547a9c89b93b"
 
       def install
         bin.install "tfcvar-sec"
       end
     end
-    url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.3.3/tfcvar-sec_0.3.3_darwin_all.tar.gz"
-    sha256 "0bb2332188ac9ab02136094e708dec42c9b2e0f7cc3d0a77c2422fbb76195b68"
+    url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.3.4/tfcvar-sec_0.3.4_darwin_all.tar.gz"
+    sha256 "aefac2022b20d761e99ba9ecf566a2844947b4eaf6c81b041607dd98a76af5d0"
 
     def install
       bin.install "tfcvar-sec"
@@ -34,24 +34,24 @@ class TfcvarSec < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.3.3/tfcvar-sec_0.3.3_linux_armv6.tar.gz"
-      sha256 "4a6151320d7ef7342b75b4106d599add2e30c283b71953234c3a873dab82aed4"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.3.4/tfcvar-sec_0.3.4_linux_armv6.tar.gz"
+      sha256 "eba59d4f433fff905ee391f2185188e86b428b0031b97f687ef6163e3005abd5"
 
       def install
         bin.install "tfcvar-sec"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.3.3/tfcvar-sec_0.3.3_linux_arm64.tar.gz"
-      sha256 "8da14900c50f9d3ffd2ccb653bac067913895366b3562b7f7cde66b410619bef"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.3.4/tfcvar-sec_0.3.4_linux_arm64.tar.gz"
+      sha256 "c8ec6962b31c321143e1a16d18155b4f3e922a950be9ce18fa2f2b55e2cd6012"
 
       def install
         bin.install "tfcvar-sec"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.3.3/tfcvar-sec_0.3.3_linux_amd64.tar.gz"
-      sha256 "89991f72f51c97e2f036ada41919087e464d74f0d706532ede1cfb76eeda3a47"
+      url "https://github.com/ausmartway/tfcvar-sec/releases/download/v0.3.4/tfcvar-sec_0.3.4_linux_amd64.tar.gz"
+      sha256 "a861851171525c9729b868cc30fb031d17e1cb4ead1338e417a4e51806253891"
 
       def install
         bin.install "tfcvar-sec"
